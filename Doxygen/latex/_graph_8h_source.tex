@@ -1,0 +1,66 @@
+\hypertarget{_graph_8h_source}{}\doxysection{Graph.\+h}
+\mbox{\hyperlink{_graph_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ GRAPH\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ GRAPH\_H}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_data_set}{DataSet}};}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_flight_8h}{Flight.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_graph_8h}{Graph.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_data_set_8h}{DataSet.h}}"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <sstream>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <cmath>}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ <limits>}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ <queue>}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ <algorithm>}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{using\ }std::string;}
+\DoxyCodeLine{00026\ \textcolor{keyword}{using\ }std::vector;}
+\DoxyCodeLine{00027\ \textcolor{keyword}{using\ }std::cerr;}
+\DoxyCodeLine{00028\ \textcolor{keyword}{using\ }std::cout;}
+\DoxyCodeLine{00029\ \textcolor{keyword}{using\ }std::cin;}
+\DoxyCodeLine{00030\ \textcolor{keyword}{using\ }std::endl;}
+\DoxyCodeLine{00031\ \textcolor{keyword}{using\ }std::ifstream;}
+\DoxyCodeLine{00032\ \textcolor{keyword}{using\ }std::queue;}
+\DoxyCodeLine{00033\ \textcolor{keyword}{using\ }std::reverse;}
+\DoxyCodeLine{00034\ \textcolor{keyword}{using\ }std::stringstream;}
+\DoxyCodeLine{00035\ \textcolor{keyword}{using\ }std::multimap;}
+\DoxyCodeLine{00036\ \textcolor{keyword}{using\ }std::pair;}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00043\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_graph}{Graph}}}
+\DoxyCodeLine{00044\ \{}
+\DoxyCodeLine{00045\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00047\ \textcolor{keywordtype}{int}\ numVertices;}
+\DoxyCodeLine{00049\ \mbox{\hyperlink{class_data_set}{DataSet}}*\ dataset;}
+\DoxyCodeLine{00051\ vector<vector<int>>\ paths;}
+\DoxyCodeLine{00053\ vector<int>\ path;}
+\DoxyCodeLine{00055\ vector<int>\ *parent;}
+\DoxyCodeLine{00057\ \mbox{\hyperlink{class_flight}{Flight}}\ ***\ adjMatrix;}
+\DoxyCodeLine{00059\ vector<int>*\ adj;}
+\DoxyCodeLine{00061\ \textcolor{keywordtype}{void}\ bfs(\textcolor{keywordtype}{int}\ start);}
+\DoxyCodeLine{00063\ \textcolor{keywordtype}{void}\ find\_paths(\textcolor{keywordtype}{int}\ u);}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00069\ \mbox{\hyperlink{class_graph}{Graph}}(\textcolor{keywordtype}{int}\ numVertices,\ \mbox{\hyperlink{class_data_set}{DataSet}}*\ dataset);}
+\DoxyCodeLine{00073\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_graph_a7aaf7ee94ac545778d5d87fd8299959c}{add\_edge}}(\textcolor{keywordtype}{int}\ source,\ \textcolor{keywordtype}{int}\ target);}
+\DoxyCodeLine{00077\ \mbox{\hyperlink{class_flight}{Flight}}*\ \mbox{\hyperlink{class_graph_a091a59364ac4c528ff629c58da76eb2a}{getAdjMatrix}}(\textcolor{keywordtype}{int}\ source,\ \textcolor{keywordtype}{int}\ target);}
+\DoxyCodeLine{00081\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_graph_abccfe8c05f3668e21f520a1de1b7ffc6}{setAdjMatrix}}(\textcolor{keywordtype}{int}\ source,\ \textcolor{keywordtype}{int}\ target,\ \mbox{\hyperlink{class_flight}{Flight}}*\ flight);}
+\DoxyCodeLine{00084\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_graph_ae9af916770c65c6b60b582ffc563d8ed}{printAdjMatrix}}();}
+\DoxyCodeLine{00088\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_graph_a2bb2e71f8c6c3403deba59edb1cbfd9c}{print\_paths\_airports}}(\textcolor{keywordtype}{string}\ source,\textcolor{keywordtype}{string}\ target);}
+\DoxyCodeLine{00092\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_graph_a313be8dc7bc9a125530e92fce7e231cc}{print\_paths\_cities}}(\textcolor{keywordtype}{string}\ source,\textcolor{keywordtype}{string}\ target);}
+\DoxyCodeLine{00096\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_graph_a9fced4b046a20d34302337058f0690c4}{printFlights}}(\textcolor{keywordtype}{string}\ source);}
+\DoxyCodeLine{00097\ \};}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00099\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00100\ }
+
+\end{DoxyCode}

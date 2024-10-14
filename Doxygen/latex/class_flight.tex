@@ -1,0 +1,112 @@
+\hypertarget{class_flight}{}\doxysection{Flight Class Reference}
+\label{class_flight}\index{Flight@{Flight}}
+
+
+Representa os voos.  
+
+
+
+
+{\ttfamily \#include $<$Flight.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_flight_acfb7494f6729c49cee1d4f3178b143d2}{set\+Source}} (\mbox{\hyperlink{class_airport}{Airport}} $\ast$source)
+\begin{DoxyCompactList}\small\item\em Define o aeroporto de saída. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_flight_a314c0831f04df6b6c8c2eb2480ca4d80}{set\+Target}} (\mbox{\hyperlink{class_airport}{Airport}} $\ast$source)
+\begin{DoxyCompactList}\small\item\em Define o aeroporto de destino. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_flight_a158c3b06147cebe24cc233b9f416e3ce}{insert\+Airline}} (\mbox{\hyperlink{class_airline}{Airline}} $\ast$airline)
+\begin{DoxyCompactList}\small\item\em Insere numa lista as companhias aéreas para um determinado voo. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_flight_af925c9ea72adabf0fc0a2253daed19ab}\label{class_flight_af925c9ea72adabf0fc0a2253daed19ab}} 
+void {\bfseries set\+Distance} ()
+\begin{DoxyCompactList}\small\item\em Define a longitude e a latitude dos aeroportos selecionados Complexidade O(1) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_flight_a4a742cf01405f73663752fd815572ec1}\label{class_flight_a4a742cf01405f73663752fd815572ec1}} 
+\mbox{\hyperlink{class_airport}{Airport}} $\ast$ {\bfseries get\+Source} ()
+\begin{DoxyCompactList}\small\item\em Define o aeroporto de saído do voo em questão Complexidade O(1) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_flight_a6b48bcbb89448b873d7fe68e07915c3e}\label{class_flight_a6b48bcbb89448b873d7fe68e07915c3e}} 
+\mbox{\hyperlink{class_airport}{Airport}} $\ast$ {\bfseries get\+Target} ()
+\begin{DoxyCompactList}\small\item\em Define o aeroporto de chegada do voo em questão Complexidade O(1) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_flight_a1b9581d8b0c3604c3af886a5a1395d72}\label{class_flight_a1b9581d8b0c3604c3af886a5a1395d72}} 
+list$<$ \mbox{\hyperlink{class_airline}{Airline}} $\ast$ $>$ \& {\bfseries get\+Airlines} ()
+\begin{DoxyCompactList}\small\item\em Obtém da lista as comanhias aéreas que realizam o voo em questão Complexidade O(1) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_flight_a3ba30e1332ca2e49ac762cc683508bb3}\label{class_flight_a3ba30e1332ca2e49ac762cc683508bb3}} 
+int {\bfseries get\+Distance} ()
+\begin{DoxyCompactList}\small\item\em Obtém a longitude e a latitude dos aeroportos selecionados Complexidade O(1) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_flight_a4297b8836480a293ad8f819900d760d9}{haversine}} (double lat1, double long1, double lat2, double long2)
+\begin{DoxyCompactList}\small\item\em Calcula a distância entre os aeroportos definidos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representa os voos. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_flight_a4297b8836480a293ad8f819900d760d9}\label{class_flight_a4297b8836480a293ad8f819900d760d9}} 
+\index{Flight@{Flight}!haversine@{haversine}}
+\index{haversine@{haversine}!Flight@{Flight}}
+\doxysubsubsection{\texorpdfstring{haversine()}{haversine()}}
+{\footnotesize\ttfamily int Flight\+::haversine (\begin{DoxyParamCaption}\item[{double}]{lat1,  }\item[{double}]{long1,  }\item[{double}]{lat2,  }\item[{double}]{long2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Calcula a distância entre os aeroportos definidos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em (lat1,long1,lat2,long2)} & latitude e longitude da origem e do destino de um trajeto Complexidade O(1) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_flight_a158c3b06147cebe24cc233b9f416e3ce}\label{class_flight_a158c3b06147cebe24cc233b9f416e3ce}} 
+\index{Flight@{Flight}!insertAirline@{insertAirline}}
+\index{insertAirline@{insertAirline}!Flight@{Flight}}
+\doxysubsubsection{\texorpdfstring{insertAirline()}{insertAirline()}}
+{\footnotesize\ttfamily void Flight\+::insert\+Airline (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_airline}{Airline}} $\ast$}]{airline }\end{DoxyParamCaption})}
+
+
+
+Insere numa lista as companhias aéreas para um determinado voo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em airline} & pointeiro para uma companhia aérea Complexidade O(1) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_flight_acfb7494f6729c49cee1d4f3178b143d2}\label{class_flight_acfb7494f6729c49cee1d4f3178b143d2}} 
+\index{Flight@{Flight}!setSource@{setSource}}
+\index{setSource@{setSource}!Flight@{Flight}}
+\doxysubsubsection{\texorpdfstring{setSource()}{setSource()}}
+{\footnotesize\ttfamily void Flight\+::set\+Source (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_airport}{Airport}} $\ast$}]{source }\end{DoxyParamCaption})}
+
+
+
+Define o aeroporto de saída. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & pointeiro que representa o aeroporto de partida Complexidade O(1) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_flight_a314c0831f04df6b6c8c2eb2480ca4d80}\label{class_flight_a314c0831f04df6b6c8c2eb2480ca4d80}} 
+\index{Flight@{Flight}!setTarget@{setTarget}}
+\index{setTarget@{setTarget}!Flight@{Flight}}
+\doxysubsubsection{\texorpdfstring{setTarget()}{setTarget()}}
+{\footnotesize\ttfamily void Flight\+::set\+Target (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_airport}{Airport}} $\ast$}]{source }\end{DoxyParamCaption})}
+
+
+
+Define o aeroporto de destino. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & ponteiro que representa o aeroporto de destino Complexidade O(1) \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_flight_8h}{Flight.\+h}}\item 
+Flight.\+cpp\end{DoxyCompactItemize}

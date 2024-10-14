@@ -1,0 +1,42 @@
+\hypertarget{_airline_8h_source}{}\doxysection{Airline.\+h}
+\mbox{\hyperlink{_airline_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ AIRLINE\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ AIRLINE\_H}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <list>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_country_8h}{Country.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_airport_8h}{Airport.h}}"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{using\ }std::string;}
+\DoxyCodeLine{00015\ \textcolor{keyword}{using\ }std::list;}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_airline}{Airline}}}
+\DoxyCodeLine{00022\ \{}
+\DoxyCodeLine{00023\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{string}\ code;\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{string}\ name;\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{string}\ callsign;\ }
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_country}{Country}}*\ country;\ }
+\DoxyCodeLine{00028\ \ \ \ \ list\ <Airport*>\ airports;\ }
+\DoxyCodeLine{00029\ \ \ \ \ list\ <Flight*>\ flights;\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_airline_a838445252f3aa916651e6cfeaa312954}{setCode}}(\textcolor{keywordtype}{string}\ code);}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_airline_ad170a810df9312963b81eed688450469}{setName}}(\textcolor{keywordtype}{string}\ name);}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_airline_a5f621d584447eeb5642a4d011d183ac5}{setCallsign}}(\textcolor{keywordtype}{string}\ callsign);}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_airline_a41c90cc3880e27860188f18d43931fa2}{setCountry}}(\mbox{\hyperlink{class_country}{Country}}\ *country);}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_airline_ac176cc0b3559361eab3d77db55334461}{getCode}}();}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_airline_a48acf049e4030ac59816e86ee6a7b4aa}{getName}}();}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_airline_a5df1ca83c934fa6444674302c1d84533}{getCallsign}}();}
+\DoxyCodeLine{00058\ \ \ \ \ \mbox{\hyperlink{class_country}{Country}}*\ \mbox{\hyperlink{class_airline_ae99f225434d8bf582c0f0e6fa66280e4}{getCountry}}();}
+\DoxyCodeLine{00061\ \ \ \ \ list\ <Airport*>\&\ \mbox{\hyperlink{class_airline_a4c3c9daa7fcd14398dc627f3b6228678}{getAirports}}();}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_airline_a09a730a1b097720d50cf8d2f4976619d}{insertAirport}}(\mbox{\hyperlink{class_airport}{Airport}}*\ airport);}
+\DoxyCodeLine{00068\ \ \ \ \ list\ <Flight*>\&\ \mbox{\hyperlink{class_airline_a232dee90aece871eb3070740e707c5a1}{getFlights}}();}
+\DoxyCodeLine{00069\ \};}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

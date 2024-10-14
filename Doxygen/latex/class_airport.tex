@@ -1,0 +1,155 @@
+\hypertarget{class_airport}{}\doxysection{Airport Class Reference}
+\label{class_airport}\index{Airport@{Airport}}
+
+
+Representa um aeroporto.  
+
+
+
+
+{\ttfamily \#include $<$Airport.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_airport_afd6aa58170e56847bf99f8eae553e491}{set\+Code}} (string code)
+\begin{DoxyCompactList}\small\item\em Define o código do aeroporto. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_airport_a064fd9435cd179b04d94c04a18a96583}{set\+Name}} (string name)
+\begin{DoxyCompactList}\small\item\em Define o nome do aeroporto. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_airport_a80b1230ddd25ed36d14ae6d3828a77f0}{set\+Latitude}} (string latitude)
+\begin{DoxyCompactList}\small\item\em Define a latitude do aeroporto. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_airport_ab85327ed5412d6d7d7c06d2fa9089d4f}{set\+Longitude}} (string longitude)
+\begin{DoxyCompactList}\small\item\em Define a longitude do aeroporto. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_airport_add9b3ea6f8849f6167f5a70a9280781a}\label{class_airport_add9b3ea6f8849f6167f5a70a9280781a}} 
+string {\bfseries get\+Code} ()
+\begin{DoxyCompactList}\small\item\em Obtém o código do aeroporto Complexidade O(1) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_airport_a939b886a8a9675e22418f2c9a490bdcb}\label{class_airport_a939b886a8a9675e22418f2c9a490bdcb}} 
+string {\bfseries get\+Name} ()
+\begin{DoxyCompactList}\small\item\em Obtém o nome do aeroporto Complexidade O(1) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_airport_afcff199f6f786aa4ee3c15cb2f195487}\label{class_airport_afcff199f6f786aa4ee3c15cb2f195487}} 
+double {\bfseries get\+Latitude} ()
+\begin{DoxyCompactList}\small\item\em Obtém a latitude do aeroporto Complexidade O(1) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_airport_a5d31cceec2a7de9fb902afeda997c3ff}\label{class_airport_a5d31cceec2a7de9fb902afeda997c3ff}} 
+double {\bfseries get\+Longitude} ()
+\begin{DoxyCompactList}\small\item\em Obtém o longitude do aeroporto Complexidade O(1) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_airport_adce299d710058d1dc2e7ee15370ac54c}\label{class_airport_adce299d710058d1dc2e7ee15370ac54c}} 
+void {\bfseries set\+City} (\mbox{\hyperlink{class_city}{City}} $\ast$city)
+\begin{DoxyCompactList}\small\item\em Define a cidade do aeroporto Complexidade O(1) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_airport_abaa142b7ad0c02e6fda172ba46c8db26}\label{class_airport_abaa142b7ad0c02e6fda172ba46c8db26}} 
+\mbox{\hyperlink{class_city}{City}} $\ast$ {\bfseries get\+City} ()
+\begin{DoxyCompactList}\small\item\em Obtém a cidade do aeroporto Complexidade O(1) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_airport_a9c943d10b864825e6942f6634bd945b3}{insert\+Airline}} (\mbox{\hyperlink{class_airline}{Airline}} $\ast$airline)
+\begin{DoxyCompactList}\small\item\em Percorre o arquivo de aeroportos até encontrar as companhias que operam em tal. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_airport_ad18f71adb6a444920799e546d258ef10}{insert\+Country}} (\mbox{\hyperlink{class_country}{Country}} $\ast$country)
+\begin{DoxyCompactList}\small\item\em Percorre o arquivo de aeroportos até encontrar os país que operam em tal. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_airport_a8d6d9c67b506195c13914b97e8ef230e}\label{class_airport_a8d6d9c67b506195c13914b97e8ef230e}} 
+list$<$ \mbox{\hyperlink{class_airline}{Airline}} $\ast$ $>$ \& {\bfseries get\+Airlines} ()
+\begin{DoxyCompactList}\small\item\em Retorna uma lista de companhias aéreas que operam em determinado aeroporto Complexidade O(1) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_airport_a99a25515c752b69fc5b0dba68b07d4dc}\label{class_airport_a99a25515c752b69fc5b0dba68b07d4dc}} 
+list$<$ \mbox{\hyperlink{class_country}{Country}} $\ast$ $>$ \& {\bfseries get\+Countries} ()
+\begin{DoxyCompactList}\small\item\em Retorna uma lista de países para qual determinado aeroporto faz conexão Complexidade O(1) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_airport_a8ea51861cd5e624d389fa4f53f819432}\label{class_airport_a8ea51861cd5e624d389fa4f53f819432}} 
+list$<$ \mbox{\hyperlink{class_flight}{Flight}} $\ast$ $>$ \& {\bfseries get\+Flights} ()
+\begin{DoxyCompactList}\small\item\em Retorna uma lista de voos que ocorrem em determinado aeroporto Complexidade O(1) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representa um aeroporto. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_airport_a9c943d10b864825e6942f6634bd945b3}\label{class_airport_a9c943d10b864825e6942f6634bd945b3}} 
+\index{Airport@{Airport}!insertAirline@{insertAirline}}
+\index{insertAirline@{insertAirline}!Airport@{Airport}}
+\doxysubsubsection{\texorpdfstring{insertAirline()}{insertAirline()}}
+{\footnotesize\ttfamily void Airport\+::insert\+Airline (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_airline}{Airline}} $\ast$}]{airline }\end{DoxyParamCaption})}
+
+
+
+Percorre o arquivo de aeroportos até encontrar as companhias que operam em tal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em airline} & companhia que pode operar em tal aeroporto Complexidade O(n) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_airport_ad18f71adb6a444920799e546d258ef10}\label{class_airport_ad18f71adb6a444920799e546d258ef10}} 
+\index{Airport@{Airport}!insertCountry@{insertCountry}}
+\index{insertCountry@{insertCountry}!Airport@{Airport}}
+\doxysubsubsection{\texorpdfstring{insertCountry()}{insertCountry()}}
+{\footnotesize\ttfamily void Airport\+::insert\+Country (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_country}{Country}} $\ast$}]{country }\end{DoxyParamCaption})}
+
+
+
+Percorre o arquivo de aeroportos até encontrar os país que operam em tal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em country} & país que pode conter tal aeroporto Complexidade O(n) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_airport_afd6aa58170e56847bf99f8eae553e491}\label{class_airport_afd6aa58170e56847bf99f8eae553e491}} 
+\index{Airport@{Airport}!setCode@{setCode}}
+\index{setCode@{setCode}!Airport@{Airport}}
+\doxysubsubsection{\texorpdfstring{setCode()}{setCode()}}
+{\footnotesize\ttfamily void Airport\+::set\+Code (\begin{DoxyParamCaption}\item[{string}]{code }\end{DoxyParamCaption})}
+
+
+
+Define o código do aeroporto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & código do aeroporto Complexidade O(1) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_airport_a80b1230ddd25ed36d14ae6d3828a77f0}\label{class_airport_a80b1230ddd25ed36d14ae6d3828a77f0}} 
+\index{Airport@{Airport}!setLatitude@{setLatitude}}
+\index{setLatitude@{setLatitude}!Airport@{Airport}}
+\doxysubsubsection{\texorpdfstring{setLatitude()}{setLatitude()}}
+{\footnotesize\ttfamily void Airport\+::set\+Latitude (\begin{DoxyParamCaption}\item[{string}]{latitude }\end{DoxyParamCaption})}
+
+
+
+Define a latitude do aeroporto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em latitude} & latitude do aeroporto Complexidade O(1) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_airport_ab85327ed5412d6d7d7c06d2fa9089d4f}\label{class_airport_ab85327ed5412d6d7d7c06d2fa9089d4f}} 
+\index{Airport@{Airport}!setLongitude@{setLongitude}}
+\index{setLongitude@{setLongitude}!Airport@{Airport}}
+\doxysubsubsection{\texorpdfstring{setLongitude()}{setLongitude()}}
+{\footnotesize\ttfamily void Airport\+::set\+Longitude (\begin{DoxyParamCaption}\item[{string}]{longitude }\end{DoxyParamCaption})}
+
+
+
+Define a longitude do aeroporto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em longitude} & longitude do aeroporto Complexidade O(1) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_airport_a064fd9435cd179b04d94c04a18a96583}\label{class_airport_a064fd9435cd179b04d94c04a18a96583}} 
+\index{Airport@{Airport}!setName@{setName}}
+\index{setName@{setName}!Airport@{Airport}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Airport\+::set\+Name (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Define o nome do aeroporto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & nome do aeroporto Complexidade O(1) \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_airport_8h}{Airport.\+h}}\item 
+Airport.\+cpp\end{DoxyCompactItemize}

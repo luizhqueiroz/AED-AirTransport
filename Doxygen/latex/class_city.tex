@@ -1,0 +1,86 @@
+\hypertarget{class_city}{}\doxysection{City Class Reference}
+\label{class_city}\index{City@{City}}
+
+
+Representa uma cidade.  
+
+
+
+
+{\ttfamily \#include $<$City.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_city_a0b10603732de8079e29033fb2f56d672}{set\+Name}} (string name)
+\begin{DoxyCompactList}\small\item\em Define o nome da cidade. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_city_a169d3641726f94b937ffae888375361f}\label{class_city_a169d3641726f94b937ffae888375361f}} 
+string {\bfseries get\+Name} ()
+\begin{DoxyCompactList}\small\item\em Obtém o nome da cidade Complexidade O(1) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_city_a4007bf985c59de7608ca92a262235ece}{set\+Country}} (\mbox{\hyperlink{class_country}{Country}} $\ast$country)
+\begin{DoxyCompactList}\small\item\em Define o pais da cidade em questão. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_city_a0814e1227d6d5a4a890d69721f1c72c5}\label{class_city_a0814e1227d6d5a4a890d69721f1c72c5}} 
+\mbox{\hyperlink{class_country}{Country}} $\ast$ {\bfseries get\+Country} ()
+\begin{DoxyCompactList}\small\item\em Obtém o pais da cidade em questão Complexidade O(1) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_city_a272a0cbf04d0ae769b3a20ed9f8c31bb}{insert\+Airport}} (\mbox{\hyperlink{class_airport}{Airport}} $\ast$airport)
+\begin{DoxyCompactList}\small\item\em Adiciona a uma lista os aeroportos da cidade em questão. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_city_aebd44cf2c9a32fdaca38c9def0708567}\label{class_city_aebd44cf2c9a32fdaca38c9def0708567}} 
+list$<$ \mbox{\hyperlink{class_airport}{Airport}} $\ast$ $>$ \& {\bfseries get\+Airports} ()
+\begin{DoxyCompactList}\small\item\em Obtém da lista os aeroportos da cidade em questão Complexidade O(1) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representa uma cidade. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_city_a272a0cbf04d0ae769b3a20ed9f8c31bb}\label{class_city_a272a0cbf04d0ae769b3a20ed9f8c31bb}} 
+\index{City@{City}!insertAirport@{insertAirport}}
+\index{insertAirport@{insertAirport}!City@{City}}
+\doxysubsubsection{\texorpdfstring{insertAirport()}{insertAirport()}}
+{\footnotesize\ttfamily void City\+::insert\+Airport (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_airport}{Airport}} $\ast$}]{airport }\end{DoxyParamCaption})}
+
+
+
+Adiciona a uma lista os aeroportos da cidade em questão. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em airport} & aeroporto presente em tal cidade Complexidade O(1) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_city_a4007bf985c59de7608ca92a262235ece}\label{class_city_a4007bf985c59de7608ca92a262235ece}} 
+\index{City@{City}!setCountry@{setCountry}}
+\index{setCountry@{setCountry}!City@{City}}
+\doxysubsubsection{\texorpdfstring{setCountry()}{setCountry()}}
+{\footnotesize\ttfamily void City\+::set\+Country (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_country}{Country}} $\ast$}]{country }\end{DoxyParamCaption})}
+
+
+
+Define o pais da cidade em questão. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em country} & país da cidade Complexidade O(1) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_city_a0b10603732de8079e29033fb2f56d672}\label{class_city_a0b10603732de8079e29033fb2f56d672}} 
+\index{City@{City}!setName@{setName}}
+\index{setName@{setName}!City@{City}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void City\+::set\+Name (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Define o nome da cidade. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & nome da cidade Complexidade O(1) \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_city_8h}{City.\+h}}\item 
+City.\+cpp\end{DoxyCompactItemize}

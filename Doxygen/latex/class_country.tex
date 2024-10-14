@@ -1,0 +1,89 @@
+\hypertarget{class_country}{}\doxysection{Country Class Reference}
+\label{class_country}\index{Country@{Country}}
+
+
+Representa um país.  
+
+
+
+
+{\ttfamily \#include $<$Country.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_country_a29e9acad35b18b9ff03e1a5c65afcb1e}{set\+Name}} (string name)
+\begin{DoxyCompactList}\small\item\em Define o nome do país. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_country_a61ed563237fcc7df21b6bb092b86507b}\label{class_country_a61ed563237fcc7df21b6bb092b86507b}} 
+string {\bfseries get\+Name} ()
+\begin{DoxyCompactList}\small\item\em Obtém o nome do país Complexidade O(1) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_country_af3fb2bc17c60fe23b0666e41183b6e10}{insert\+City}} (\mbox{\hyperlink{class_city}{City}} $\ast$city)
+\begin{DoxyCompactList}\small\item\em Adiciona a uma lista as cidades do país em questão. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_country_aa6f47ba8033603e6103ed2b28a8371b7}\label{class_country_aa6f47ba8033603e6103ed2b28a8371b7}} 
+list$<$ \mbox{\hyperlink{class_city}{City}} $\ast$ $>$ \& {\bfseries get\+Cities} ()
+\begin{DoxyCompactList}\small\item\em Obtém as cidades do país em questão Complexidade O(1) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_country_a3e6b77529b63a6fb2c8e60c1526fb1ae}{insert\+Airline}} (\mbox{\hyperlink{class_airline}{Airline}} $\ast$airline)
+\begin{DoxyCompactList}\small\item\em Adiciona a uma lista as companhias aéreas do país em questão. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_country_a24267354017813861eb134fc5f91aae0}\label{class_country_a24267354017813861eb134fc5f91aae0}} 
+list$<$ \mbox{\hyperlink{class_airline}{Airline}} $\ast$ $>$ \& {\bfseries get\+Airlines} ()
+\begin{DoxyCompactList}\small\item\em Obtém da lista as companhias aéreas do país em questão Complexidade O(1) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_country_ac9014aec0216574d907cf5e1a7fd4549}\label{class_country_ac9014aec0216574d907cf5e1a7fd4549}} 
+list$<$ \mbox{\hyperlink{class_flight}{Flight}} $\ast$ $>$ \& {\bfseries get\+Flights} ()
+\begin{DoxyCompactList}\small\item\em Obtém da lista dos voos do país em questão Complexidade O(1) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representa um país. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_country_a3e6b77529b63a6fb2c8e60c1526fb1ae}\label{class_country_a3e6b77529b63a6fb2c8e60c1526fb1ae}} 
+\index{Country@{Country}!insertAirline@{insertAirline}}
+\index{insertAirline@{insertAirline}!Country@{Country}}
+\doxysubsubsection{\texorpdfstring{insertAirline()}{insertAirline()}}
+{\footnotesize\ttfamily void Country\+::insert\+Airline (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_airline}{Airline}} $\ast$}]{airline }\end{DoxyParamCaption})}
+
+
+
+Adiciona a uma lista as companhias aéreas do país em questão. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em airline} & companhia aérea presente em tal país Complexidade O(1) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_country_af3fb2bc17c60fe23b0666e41183b6e10}\label{class_country_af3fb2bc17c60fe23b0666e41183b6e10}} 
+\index{Country@{Country}!insertCity@{insertCity}}
+\index{insertCity@{insertCity}!Country@{Country}}
+\doxysubsubsection{\texorpdfstring{insertCity()}{insertCity()}}
+{\footnotesize\ttfamily void Country\+::insert\+City (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_city}{City}} $\ast$}]{city }\end{DoxyParamCaption})}
+
+
+
+Adiciona a uma lista as cidades do país em questão. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em city} & cidade presente em tal país Complexidade O(1) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_country_a29e9acad35b18b9ff03e1a5c65afcb1e}\label{class_country_a29e9acad35b18b9ff03e1a5c65afcb1e}} 
+\index{Country@{Country}!setName@{setName}}
+\index{setName@{setName}!Country@{Country}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Country\+::set\+Name (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Define o nome do país. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & nome do pais Complexidade O(1) \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_country_8h}{Country.\+h}}\item 
+Country.\+cpp\end{DoxyCompactItemize}

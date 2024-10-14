@@ -1,0 +1,50 @@
+\hypertarget{_airport_8h_source}{}\doxysection{Airport.\+h}
+\mbox{\hyperlink{_airport_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ AIRPORT\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ AIRPORT\_H}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_city_8h}{City.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_country_8h}{Country.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_airline_8h}{Airline.h}}"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <list>}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{using\ }std::string;}
+\DoxyCodeLine{00016\ \textcolor{keyword}{using\ }std::list;}
+\DoxyCodeLine{00017\ \textcolor{keyword}{using\ }std::stod;}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_airport}{Airport}}}
+\DoxyCodeLine{00024\ \{}
+\DoxyCodeLine{00025\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{string}\ code;\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{string}\ name;\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{double}\ latitude;\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{double}\ longitude;\ }
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{class_city}{City}}*\ city;\ }
+\DoxyCodeLine{00031\ \ \ \ \ list\ <Airline\ *>\ airlines;\ }
+\DoxyCodeLine{00032\ \ \ \ \ list\ <Country\ *>\ countries;\ }
+\DoxyCodeLine{00033\ \ \ \ \ list\ <Flight\ *>\ flights;\ }
+\DoxyCodeLine{00035\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_airport_afd6aa58170e56847bf99f8eae553e491}{setCode}}(\textcolor{keywordtype}{string}\ code);}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_airport_a064fd9435cd179b04d94c04a18a96583}{setName}}(\textcolor{keywordtype}{string}\ name);}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_airport_a80b1230ddd25ed36d14ae6d3828a77f0}{setLatitude}}(\textcolor{keywordtype}{string}\ latitude);}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_airport_ab85327ed5412d6d7d7c06d2fa9089d4f}{setLongitude}}(\textcolor{keywordtype}{string}\ longitude);}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_airport_add9b3ea6f8849f6167f5a70a9280781a}{getCode}}();}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_airport_a939b886a8a9675e22418f2c9a490bdcb}{getName}}();}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_airport_afcff199f6f786aa4ee3c15cb2f195487}{getLatitude}}();}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_airport_a5d31cceec2a7de9fb902afeda997c3ff}{getLongitude}}();}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_airport_adce299d710058d1dc2e7ee15370ac54c}{setCity}}(\mbox{\hyperlink{class_city}{City}}\ *city);}
+\DoxyCodeLine{00069\ \ \ \ \ \mbox{\hyperlink{class_city}{City}}*\ \mbox{\hyperlink{class_airport_abaa142b7ad0c02e6fda172ba46c8db26}{getCity}}();}
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_airport_a9c943d10b864825e6942f6634bd945b3}{insertAirline}}(\mbox{\hyperlink{class_airline}{Airline}}*\ airline);}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_airport_ad18f71adb6a444920799e546d258ef10}{insertCountry}}(\mbox{\hyperlink{class_country}{Country}}*\ country);}
+\DoxyCodeLine{00080\ \ \ \ \ list\ <Airline\ *>\&\ \mbox{\hyperlink{class_airport_a8d6d9c67b506195c13914b97e8ef230e}{getAirlines}}();}
+\DoxyCodeLine{00083\ \ \ \ \ list\ <Country\ *>\&\ \mbox{\hyperlink{class_airport_a99a25515c752b69fc5b0dba68b07d4dc}{getCountries}}();}
+\DoxyCodeLine{00086\ \ \ \ \ list\ <Flight\ *>\&\ \mbox{\hyperlink{class_airport_a8ea51861cd5e624d389fa4f53f819432}{getFlights}}();}
+\DoxyCodeLine{00087\ \};}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

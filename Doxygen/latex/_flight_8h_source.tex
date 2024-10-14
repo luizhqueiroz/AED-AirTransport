@@ -1,0 +1,38 @@
+\hypertarget{_flight_8h_source}{}\doxysection{Flight.\+h}
+\mbox{\hyperlink{_flight_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ FLIGHT\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ FLIGHT\_H}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_airport_8h}{Airport.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_airline_8h}{Airline.h}}"{}}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <cmath>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{using\ }std::cout;}
+\DoxyCodeLine{00015\ \textcolor{keyword}{using\ }std::endl;}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_flight}{Flight}}}
+\DoxyCodeLine{00022\ \{}
+\DoxyCodeLine{00023\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_airport}{Airport}}*\ source;\ }
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_airport}{Airport}}*\ target;\ }
+\DoxyCodeLine{00026\ \ \ \ \ list<Airline\ *>\ airlines;\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{int}\ distance;\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_flight_acfb7494f6729c49cee1d4f3178b143d2}{setSource}}(\mbox{\hyperlink{class_airport}{Airport}}*\ source);}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_flight_a314c0831f04df6b6c8c2eb2480ca4d80}{setTarget}}(\mbox{\hyperlink{class_airport}{Airport}}*\ source);}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_flight_a158c3b06147cebe24cc233b9f416e3ce}{insertAirline}}(\mbox{\hyperlink{class_airline}{Airline}}*\ airline);}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_flight_af925c9ea72adabf0fc0a2253daed19ab}{setDistance}}();}
+\DoxyCodeLine{00047\ \ \ \ \ \mbox{\hyperlink{class_airport}{Airport}}*\ \mbox{\hyperlink{class_flight_a4a742cf01405f73663752fd815572ec1}{getSource}}();}
+\DoxyCodeLine{00050\ \ \ \ \ \mbox{\hyperlink{class_airport}{Airport}}*\ \mbox{\hyperlink{class_flight_a6b48bcbb89448b873d7fe68e07915c3e}{getTarget}}();}
+\DoxyCodeLine{00053\ \ \ \ \ list<Airline\ *>\&\ \mbox{\hyperlink{class_flight_a1b9581d8b0c3604c3af886a5a1395d72}{getAirlines}}();}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_flight_a3ba30e1332ca2e49ac762cc683508bb3}{getDistance}}();}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_flight_a4297b8836480a293ad8f819900d760d9}{haversine}}(\textcolor{keywordtype}{double}\ lat1,\textcolor{keywordtype}{double}\ long1,\textcolor{keywordtype}{double}\ lat2,\textcolor{keywordtype}{double}\ long2);}
+\DoxyCodeLine{00061\ \};}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

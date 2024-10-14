@@ -1,0 +1,129 @@
+\hypertarget{class_airline}{}\doxysection{Airline Class Reference}
+\label{class_airline}\index{Airline@{Airline}}
+
+
+Representa uma companhia aérea.  
+
+
+
+
+{\ttfamily \#include $<$Airline.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_airline_a838445252f3aa916651e6cfeaa312954}{set\+Code}} (string code)
+\begin{DoxyCompactList}\small\item\em Define o código da companhia aérea. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_airline_ad170a810df9312963b81eed688450469}{set\+Name}} (string name)
+\begin{DoxyCompactList}\small\item\em Define o nome da companhia aérea. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_airline_a5f621d584447eeb5642a4d011d183ac5}{set\+Callsign}} (string callsign)
+\begin{DoxyCompactList}\small\item\em Define a alcunha da companhia aérea. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_airline_a41c90cc3880e27860188f18d43931fa2}{set\+Country}} (\mbox{\hyperlink{class_country}{Country}} $\ast$country)
+\begin{DoxyCompactList}\small\item\em Define o país da companhia aérea. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_airline_ac176cc0b3559361eab3d77db55334461}\label{class_airline_ac176cc0b3559361eab3d77db55334461}} 
+string {\bfseries get\+Code} ()
+\begin{DoxyCompactList}\small\item\em Obtém o código da companhia aérea Complexidade O(1) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_airline_a48acf049e4030ac59816e86ee6a7b4aa}\label{class_airline_a48acf049e4030ac59816e86ee6a7b4aa}} 
+string {\bfseries get\+Name} ()
+\begin{DoxyCompactList}\small\item\em Obtém o nome da companhia aérea Complexidade O(1) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_airline_a5df1ca83c934fa6444674302c1d84533}\label{class_airline_a5df1ca83c934fa6444674302c1d84533}} 
+string {\bfseries get\+Callsign} ()
+\begin{DoxyCompactList}\small\item\em Obtém a alcunha da companhia aérea Complexidade O(1) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_airline_ae99f225434d8bf582c0f0e6fa66280e4}\label{class_airline_ae99f225434d8bf582c0f0e6fa66280e4}} 
+\mbox{\hyperlink{class_country}{Country}} $\ast$ {\bfseries get\+Country} ()
+\begin{DoxyCompactList}\small\item\em Obtém o país da companhia aérea Complexidade O(1) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_airline_a4c3c9daa7fcd14398dc627f3b6228678}\label{class_airline_a4c3c9daa7fcd14398dc627f3b6228678}} 
+list$<$ \mbox{\hyperlink{class_airport}{Airport}} $\ast$ $>$ \& {\bfseries get\+Airports} ()
+\begin{DoxyCompactList}\small\item\em Obtém a lista de aeroportos Complexidade O(1) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_airline_a09a730a1b097720d50cf8d2f4976619d}{insert\+Airport}} (\mbox{\hyperlink{class_airport}{Airport}} $\ast$airport)
+\begin{DoxyCompactList}\small\item\em insere os aeroportos que estão em determinada companhia aérea \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_airline_a232dee90aece871eb3070740e707c5a1}\label{class_airline_a232dee90aece871eb3070740e707c5a1}} 
+list$<$ \mbox{\hyperlink{class_flight}{Flight}} $\ast$ $>$ \& {\bfseries get\+Flights} ()
+\begin{DoxyCompactList}\small\item\em Obtém os voos que estão em determinada companhia aérea Complexidade O(1) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representa uma companhia aérea. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_airline_a09a730a1b097720d50cf8d2f4976619d}\label{class_airline_a09a730a1b097720d50cf8d2f4976619d}} 
+\index{Airline@{Airline}!insertAirport@{insertAirport}}
+\index{insertAirport@{insertAirport}!Airline@{Airline}}
+\doxysubsubsection{\texorpdfstring{insertAirport()}{insertAirport()}}
+{\footnotesize\ttfamily void Airline\+::insert\+Airport (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_airport}{Airport}} $\ast$}]{airport }\end{DoxyParamCaption})}
+
+
+
+insere os aeroportos que estão em determinada companhia aérea 
+
+
+\begin{DoxyParams}{Parameters}
+{\em airport} & aeroporto de uma companhia aérea Complexidade O(n) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_airline_a5f621d584447eeb5642a4d011d183ac5}\label{class_airline_a5f621d584447eeb5642a4d011d183ac5}} 
+\index{Airline@{Airline}!setCallsign@{setCallsign}}
+\index{setCallsign@{setCallsign}!Airline@{Airline}}
+\doxysubsubsection{\texorpdfstring{setCallsign()}{setCallsign()}}
+{\footnotesize\ttfamily void Airline\+::set\+Callsign (\begin{DoxyParamCaption}\item[{string}]{callsign }\end{DoxyParamCaption})}
+
+
+
+Define a alcunha da companhia aérea. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em callsign} & alcunha da companhia aérea Complexidade O(1) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_airline_a838445252f3aa916651e6cfeaa312954}\label{class_airline_a838445252f3aa916651e6cfeaa312954}} 
+\index{Airline@{Airline}!setCode@{setCode}}
+\index{setCode@{setCode}!Airline@{Airline}}
+\doxysubsubsection{\texorpdfstring{setCode()}{setCode()}}
+{\footnotesize\ttfamily void Airline\+::set\+Code (\begin{DoxyParamCaption}\item[{string}]{code }\end{DoxyParamCaption})}
+
+
+
+Define o código da companhia aérea. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & código da companhia aérea Complexidade O(1) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_airline_a41c90cc3880e27860188f18d43931fa2}\label{class_airline_a41c90cc3880e27860188f18d43931fa2}} 
+\index{Airline@{Airline}!setCountry@{setCountry}}
+\index{setCountry@{setCountry}!Airline@{Airline}}
+\doxysubsubsection{\texorpdfstring{setCountry()}{setCountry()}}
+{\footnotesize\ttfamily void Airline\+::set\+Country (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_country}{Country}} $\ast$}]{country }\end{DoxyParamCaption})}
+
+
+
+Define o país da companhia aérea. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em country} & país da companhia aérea Complexidade O(1) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_airline_ad170a810df9312963b81eed688450469}\label{class_airline_ad170a810df9312963b81eed688450469}} 
+\index{Airline@{Airline}!setName@{setName}}
+\index{setName@{setName}!Airline@{Airline}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Airline\+::set\+Name (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Define o nome da companhia aérea. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & nome da companhia aérea Complexidade O(1) \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_airline_8h}{Airline.\+h}}\item 
+Airline.\+cpp\end{DoxyCompactItemize}
